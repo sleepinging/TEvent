@@ -1,10 +1,15 @@
 # TEvent
 
+## install
+```
+go get -u github.com/sleepinging/TEvent
+```
+
 ## Example
 ```go
 import (
 	"fmt"
-	te "./tevent"
+	te "github.com/sleepinging/TEvent"
 	"time"
 )
 
