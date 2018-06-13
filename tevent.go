@@ -57,6 +57,7 @@ func (this *TEvent) init() {
 	this.EventList = make(map[int][]EventFunc)
 }
 
+//工厂函数，生成一个事件类
 func NewEvent() (e *TEvent) {
 	e = new(TEvent)
 	e.init()
