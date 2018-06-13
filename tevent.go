@@ -53,12 +53,9 @@ func (this *TEvent) ReMoveEventHandler(eid int, fh EventFunc) {
 	}
 }
 
-func (this *TEvent) init() {
-	this.EventList = make(map[int][]EventFunc)
-}
-
+//工厂函数，生成一个事件类
 func NewEvent() (e *TEvent) {
 	e = new(TEvent)
-	e.init()
+	e.EventList = make(map[int][]EventFunc)
 	return
 }
