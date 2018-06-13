@@ -41,16 +41,16 @@ func main(){
 }
 ```
 ### OUTPUT
-1 Red DoorOpen
-1 Red DoorOpen
-Red 1 Hello
-1 Red DoorOpen
-1 Red DoorOpen
-Red 1 Hello
-1 Red DoorOpen
-Red 1 Hello
-1 Red DoorOpen
-Red 1 Hello
-Red 1 Hello
-Red 1 Hello
+1 Red DoorOpen 
+1 Red DoorOpen 
+Red 1 Hello 
+1 Red DoorOpen 
+1 Red DoorOpen 
+Red 1 Hello 
+1 Red DoorOpen 
+Red 1 Hello 
+1 Red DoorOpen 
+Red 1 Hello 
+Red 1 Hello 
+Red 1 Hello 
 Red 1 Hello
