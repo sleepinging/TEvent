@@ -41,7 +41,7 @@ func (this *TEvent) AddEventHandler(eid int, fh EventFunc) {
 //eid 事件id
 //fh 事件处理函数
 func (this *TEvent) ReMoveEventHandler(eid int, fh EventFunc) {
-	fs.ok := this.EventList[eid]
+	fs,ok := this.EventList[eid]
 	if len(fs) == 0||!ok {
 		return
 	}
