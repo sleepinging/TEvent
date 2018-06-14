@@ -20,8 +20,8 @@ func getArgs(args ...interface{}) []reflect.Value {
 //eid 事件id
 //args 参数
 func (this *TEvent) Happen(eid int, args ...interface{}) {
-	fs := this.EventList[eid]
-	if len(fs) == 0 {
+	fs,ok := this.EventList[eid]
+	if len(fs) == 0||!ok {
 		return
 	}
 	argvs := getArgs(args...)
@@ -41,8 +41,8 @@ func (this *TEvent) AddEventHandler(eid int, fh EventFunc) {
 //eid 事件id
 //fh 事件处理函数
 func (this *TEvent) ReMoveEventHandler(eid int, fh EventFunc) {
-	fs := this.EventList[eid]
-	if len(fs) == 0 {
+	fs.ok := this.EventList[eid]
+	if len(fs) == 0||!ok {
 		return
 	}
 	for i, f := range fs {
